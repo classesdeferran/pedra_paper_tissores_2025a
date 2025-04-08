@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra Papel Tijeras</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>PIEDRA - PAPEL - TIJERAS</h1>
+    </header>
+    <main>
+      <form name="juego">
+        <div>
+          <div>
+            <input
+              type="radio"
+              name="jugada"
+              id="piedra"
+              value="1"
+              checked
+            />
+            <label for="piedra">✊</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="jugada"
+              id="papel"
+              value="2"
+            />
+            <label for="papel">✋</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="jugada"
+              id="tijeras"
+              value="3"
+            />
+            <label for="tijeras">✌️</label>
+          </div>
+        </div>
+        <button type="submit">¡ A JUGAR !</button>
+      </form>
+      <div id="respuesta"></div>
+      <div id="imagen"></div>
+      <audio id="victoria">
+        <source src="assets/aplausos.mp3" type="audio/mpg">
+      </audio>
+      <audio id="empate">
+        <source src="assets/alarma.mp3" type="audio/mpg">
+      </audio>
+      <audio id="derrota">
+        <source src="assets/gameover.mp3" type="audio/mpg">
+      </audio>
+    </main>
+
+    <script src="js/game.js"></script>
+  </body>
+</html>
