@@ -18,7 +18,7 @@ h1 {
 }
 
 body {
-  background-image: url(../img/Piedra-papel-o-tijera_350x150.jpg);
+  background-image: linear-gradient(rgba(204, 204, 204, 0.5), rgba(204, 204, 204, 0.5)), url(../img/Piedra-papel-o-tijera_350x150.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,10 +88,16 @@ header {
 }
 
 #respuesta {
+    display: block;
     padding: 1rem 2rem 1rem;
+    text-align: center;
 }
 
-#imagen {
+#divImagen {
     width: 100%;
     display: block;
+
+    img {
+        width: 100%
+    }
 }
